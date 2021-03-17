@@ -13,7 +13,7 @@ const App  = () => {
         const APIkey="b857d03a99c79abd8612f7738bf68da0"
         try{
             const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${term}&appid=${APIkey}`);
-            const fiveResponse = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?units=metric&q=${term}&appid=${APIkey}`)
+            const fiveResponse = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?units=metric&q=${term}&appid=${APIkey}`)
             console.log( response)
             console.log(fiveResponse)
             setWeather(response)
